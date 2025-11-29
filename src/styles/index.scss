@@ -1,6 +1,8 @@
 $colorBlue: #00ACDC;
 $colorBlack: #000;
 $colorWhite: #fff;
+$colorNav: #060b35;
+$colorTitleHover: #34568b;
 
 
 body {
@@ -15,11 +17,16 @@ body {
   align-items: center;
   background-color: $colorWhite;
   padding: 1rem;
-  .logo{
-    img {
+  &__logo{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    &-image {
       max-height: 40px;
       margin-left: 50px;
+      display: block;
     }
+
   }
 }
 
@@ -33,16 +40,17 @@ body {
     margin: 0;
   }
   &__item {
+    padding: 0.5rem;
+
     &:last-child {
       margin-right: 50px;
     }
 
-    padding: 0.5rem;
   }
   &__link {
     text-transform: uppercase;
     font-weight: 500;
-    color: $colorBlack;
+    color: $colorNav;
     text-decoration: none;
     &.is-active {
       color: $colorBlue;
@@ -50,55 +58,102 @@ body {
     }
 
     &:hover {
-      text-decoration: underline;
-      text-decoration-line: $colorBlue;
+      text-decoration: none;
       color: $colorBlue;
     }
   }
 }
 
+.catalog {
+  display: grid;
+  justify-content: center;
+  gap: 48px 46px;
+  padding: 50px 40px;
+  grid-template-columns: repeat(1, 200px);
+}
+
+
+@media (min-width: 488px) {
+  .catalog {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .catalog {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
 .card{
+  width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
-  margin-left: 17px;
+  transition: transform 300ms ease;
 
-  &__apple {
-    width: 166px;
-    height: 36px;
+  &__title {
+    width: 100%;
     font-size: 12px;
     font-weight: 500;
+    color: $colorBlack;
+    margin: 8px 0;
+    line-height: 1.4;
+    transition: color 300ms ease;
   }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover .card__title {
+    color: $colorTitleHover;
+  }
+
+  &__image-link {
+    display: block;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
   &__product-code {
-    width: 98px;
-    height: 14px;
-    font-size: 10px;
+    width: 100%;
     line-height: 14px;
+    font-size: 10px;
     font-weight: 400;
     letter-spacing: 0;
     opacity: 1;
-
+    margin: 4px 0 8px;
   }
+
   &__price{
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    gap: 8px;
 
-
-    .price {
-      width: 31px;
-      height: 18px;
+    &-label {
       font-size: 12px;
       font-weight: 400;
       opacity: 1;
     }
-    .value {
-      width: 50px;
-      height: 18px;
+
+    &-value {
       font-size: 16px;
       font-weight: 700;
-      margin-left: 85px;
+      margin-left: auto;
     }
 
   }
@@ -107,11 +162,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 40px;
-    width: 166px;
+    width: 100%;
     background-color: $colorBlue;
     border-radius: 5px;
-    opacity: 1;
+    border: 1px solid transparent;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -119,37 +175,16 @@ body {
     letter-spacing: 0;
     color: $colorWhite;
 
+    transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+
     &:hover {
       background-color: $colorWhite;
       color: $colorBlue;
+      border-color: $colorBlue;
 
     }
   }
 }
 
-.catalog {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-
-@media (max-width: 1200px) {
-  .catalog {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 944px;
-  }
-}
-
-
-@media (max-width: 1024px) {
-  .catalog {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 944px;
-  }
-}
 
 

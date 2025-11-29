@@ -23,144 +23,223 @@
 
   <body>
     <header class="header">
-      <section class="logo">
-        <a href="#index.html" class="logo">
-          <img src="./images/logo.png" alt="logo">
-        </a>
-      </section>
+
+      <a href="#index.html" class="header__logo">
+        <img
+          src="./images/logo.png"
+          alt="logo"
+          class="header__logo-image" />
+      </a>
+
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link is-active">apple</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">samsumg</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">smartphones</a></li>
-          <li class="nav__item"><a href="#" class="nav__link is-active">laptops & computers</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">gadgets</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">tablets</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">photo</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">video</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link is-active">apple</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">samsumg</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">smartphones</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"
+              class="nav__link"
+              data-qa="nav-hover">laptops & computers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">gadgets</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">tablets</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">photo</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">video</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <div class="catalog">
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
-        <p class="card__product-code">Product code: 195434</p>
-        <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
-        </div>
-        <div class="card__button">buy</div>
-      </div>
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
-        <p class="card__product-code">Product code: 195434</p>
-        <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
-        </div>
-        <div class="card__button">buy</div>
-      </div>
+    <main class="catalog" role="main">
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
-        <p class="card__product-code">Product code: 195434</p>
-        <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
-        </div>
-        <div class="card__button">buy</div>
-      </div>
+      <article class="card" data-qa="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
         <p class="card__product-code">Product code: 195434</p>
         <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
         </div>
-        <div class="card__button">buy</div>
-      </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
-        <p class="card__product-code">Product code: 195434</p>
-        <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
-        </div>
-        <div class="card__button">buy</div>
-      </div>
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
         <p class="card__product-code">Product code: 195434</p>
         <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
         </div>
-        <div class="card__button">buy</div>
-      </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
-        <p class="card__product-code">Product code: 195434</p>
-        <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
-        </div>
-        <div class="card__button">buy</div>
-      </div>
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
 
-      <div class="card">
-        <div class="imac">
-          <a href="#" class="imac">
-            <img src="./images/imac.png" alt="imac">
-          </a>
-        </div>
-        <h2 class="card__apple">APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)</h2>
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
         <p class="card__product-code">Product code: 195434</p>
         <div class="card__price">
-          <p class="price">Price:</p>
-          <p class="value">$2,199</p>
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
         </div>
-        <div class="card__button">buy</div>
-      </div>
-    </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
+
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
+        <p class="card__product-code">Product code: 195434</p>
+        <div class="card__price">
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
+        </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
+
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
+        <p class="card__product-code">Product code: 195434</p>
+        <div class="card__price">
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
+        </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
+
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
+        <p class="card__product-code">Product code: 195434</p>
+        <div class="card__price">
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
+        </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
+
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
+        <p class="card__product-code">Product code: 195434</p>
+        <div class="card__price">
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
+        </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
+
+      <article class="card">
+        <a href="#" class="card__image-link">
+          <img
+            src="./images/imac.png"
+            alt="Apple iMac"
+            class="card__image" />
+        </a>
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina <br> 5K Monoblock (MNED2UA/A)
+        </h2>
+        <p class="card__product-code">Product code: 195434</p>
+        <div class="card__price">
+          <span class="card__price-label">Price:</span>
+          <span class="card__price-value">$2,199</span>
+        </div>
+        <button
+          class="card__button"
+          type="button"
+          data-qa="card-hover">buy</button>
+      </article>
+    </main>
   </body>
 </html>
